@@ -1,0 +1,70 @@
+body {
+    padding-top: 70px;
+    scroll-padding-top: 70px !important;
+}
+
+.Slink a {
+    text-decoration: none !important;
+    color: rgb(96, 96, 97);
+}
+
+.jumbotron {
+    padding: 2rem 1rem;
+    margin-bottom: 2rem;
+    background-color: #e9ecef;
+    border-radius: .3rem;
+}
+
+.navbar1 {
+    transition: background-color 500ms ease-in-out !important;
+}
+
+.navbar1:hover {
+    background-color: rgb(212, 217, 230) !important;
+}
+
+.picture-div img {
+    filter: drop-shadow(10px 10px 2px rgba(0, 0, 0, 0.8));
+}
+
+.item1 img,
+.item2 img,
+.item3 img {
+    height: 450px !important;
+}
+
+.pt3 {
+    background-color: #e9ecef;
+    padding: 50px !important;
+    border-radius: 20px;
+}
+
+.pt4 {
+    padding-top: 20px !important;
+    padding-bottom: 20px !important;
+}
+
+.pt5 button {
+    text-align: left !important;
+}
+
+.pt5 {
+    background-color: white !important;
+}
+
+.click1:target,
+.click2:target,
+.click3:target,
+.click4:target {
+    display: block !important;
+}
+
+@media screen and (min-width: 720px) {}
+
+@media screen and (max-width: 720px) {
+    .item1 img,
+    .item2 img,
+    .item3 img {
+        height: 250px !important;
+    }
+}

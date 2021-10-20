@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+   <title>Document</title>
+   <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+   <!-- navbar starts from here -->
+
+   <div class="container-fluid">
+      <div class="row">
+         <div class="col">
+            <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light navbar1 ">
+               <div class="container-fluid">
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                  <a class="navbar-brand" href="#">Nouman</a>
+                  <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                           <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link" href="#faq">About</a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link" href="#">Articles</a>
+                        </li>
+
+                        <li class="nav-item">
+                           <a class="nav-link" href="#">Blogs</a>
+                        </li>
+
+                     </ul>
+                     <form class="d-flex mx-0 me-lg-2 ">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                     </form>
+
+                     <!-- {modal}  Registration button are here -->
+
+                     <button class="btn btn-secondary me-2 my-2" data-bs-toggle="modal" data-bs-target="#mod">Register</button>
+
+                     <div class="modal fade" data-bs-backdrop="false" data-bs-backdrop="static" id="mod">
+                        <div class="modal-dialog">
+                           <div class="modal-content">
+
+                              <div class="modal-header">
+                                 <h4 class="modal-title mx-auto">Register Yourself Here</h4>
+                                 <button class="btn-close" data-bs-dismiss="modal"></button>
+                              </div>
+                              <div class="modal-body">
+                                 <form action="">
+                                    <div class="row g-3">
+                                       <div class="col-12 col-lg-6">
+                                          <div>
+                                             <input type="text" class="form-control" placeholder="Enter first name"></div>
+                                       </div>
+                                       <div class="col-12 col-lg-6 ">
+                                          <div>
+                                             <input type="text" class="form-control" placeholder="Enter last name">
+
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="row my-3 ">
+                                       <div class="co-12">
+                                          <div>
+                                             <input type="email" class="form-control" placeholder="Enter Email address">
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="row g-3">
+                                       <div class=" col-12 col-lg-6">
+                                          <div>
+                                             <input type="password" class="form-control" placeholder="Enter Password">
+                                          </div>
+                                       </div>
+                                       <div class="col-12 col-lg-6">
+                                          <div>
+                                             <input type="password" class="form-control" placeholder="Confirm Password">
+                                          </div>
+                                       </div>
+                                    </div>
+
+
+
+                                    <div class="row my-2">
+                                       <div class="col-12 col-lg-5">
+                                          <label for="" class="form-label">Select Country</label>
+                                          <select name="" id="" class="form-select">
+
+                                                            <option value="" disabled selected>country </option>
+                                                            <option value="">Pakistan</option>
+                                                            <option value="">India</option>
+                                                            <option value="">USA</option>
+                                                            <option value="">UK</option>
+                                                            <option value="">KSA</option>
+                                                            <option value="">UAE</option>
+                                                            <option value="">AUS</option>
+                                                        </select>
+                                       </div>
+
+
+                                       <div class="col-12 col-lg-5 offset-lg-2 my-2">
+                                          <label for="" class="form-label">Graduation Year</label>
+                                          <select name="" id="" class="form-select">
+
+                                                            <option value="" disabled selected>Year</option>
+                                                            <option value="">2020</option>
+                                                            <option value="">2019</option>
+                                                            <option value="">2018</option>
+                                                            <option value="">2017</option>
+                                                            <option value="">2016</option>
+                                                            <option value="">2015</option>
+                                                            <option value="">2014</option>
+                                                        </select>
+                                       </div>
+                                    </div>
+
+
+
+
+                                    <div class="row justify-content-center text-center my-3">
+                                       <div class="col-12 col-lg-6">
+                                          <p class="h6 "> Select your Plan</p>
+                                          <div class="row ">
+                                             <div class="col-6">
+                                                <div class="form-check  ">
+                                                   <label for="" class="form-check-label">Free
+                                                                        Plan</label>
+                                                   <input type="radio" class="form-check-input" name="aa">
+                                                </div>
+                                             </div>
+                                             <div class="col-6">
+                                                <div class="form-check">
+                                                   <label for="" class="form-check-label">Paid
+                                                                        Plan</label>
+                                                   <input type="radio" class="form-check-input " checked name="aa">
+                                                </div>
+                                             </div>
+                                          </div>
+
+
+                                       </div>
+                                    </div>
+
+
+                                    <div class="row justify-content-center text-center my-3">
+                                       <div class="col-12 col-lg-6">
+                                          <p class="h6"> Choose</p>
+                                          <div class="row ">
+                                             <div class="col">
+                                                <div class="form-check form-switch ">
+                                                   <label for="" class="form-check-label">Monthly</label>
+                                                   <input type="checkbox" class="form-check-input" name="">
+                                                </div>
+                                             </div>
+                                             <div class="col">
+                                                <div class="form-check form-switch">
+                                                   <label for="" class="form-check-label">Annual</label>
+                                                   <input type="checkbox" class="form-check-input" checked name="">
+                                                </div>
+                                             </div>
+                                          </div>
+
+
+                                       </div>
+                                    </div>
+
+
+
+                                    <div class="row my-3">
+                                       <div class="col-12">
+                                          <div class="input-group ">
+
+                                             <input type="file" class="form-control">
+                                             <label for="" class="input-group-text"> Upload CNIC</label>
+
+                                          </div>
+                                       </div>
+                                    </div>
+
+                                    <div class="row ">
+                                       <div class="col d-flex justify-content-between">
+                                          <button class="btn btn-danger" type="reset">Reset</button>
+                                          <button class="btn btn-primary" data-bs-dismiss="modal" type="Submit">Submit</button>
+                                       </div>
+                                    </div>
+                                 </form>
+                              </div>
+
+
+                              <div class=" bg-light modal-footer">
+                                 <button class=" btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                              </div>
+
+                           </div>
+
+
+
+                        </div>
+
+
+
+                     </div>
+
+
+
+                     <!-- login form is here -->
+                     <button class="btn btn-outline-primary my-2" data-bs-toggle="modal" data-bs-target="#mod1">Sign in</button>
+
+                     <div class="modal fade" data-bs-backdrop="false" data-bs-backdrop="static" id="mod1">
+                        <div class="modal-dialog">
+                           <div class="modal-content">
+                              <div class="modal-header ">
+                                 <h4 class="modal-title">Please Sign in</h4>
+                                 <button class="btn-close" data-bs-dismiss="modal"></button>
+                              </div>
+                              <div class="modal-body">
+                                 <form action="">
+
+                                    <div class="row">
+                                       <div class="col-12 mb-3 col-md-8 offset-lg-2">
+                                          <input class="form-control" type="text" placeholder="Enter Your Email address">
+                                       </div>
+                                       <div class="col-12 mb-3 col-md-8 offset-lg-2">
+                                          <input class=" form-control  3" type="password" placeholder="Enter your password">
+                                       </div>
+                                       <div class="col-12 mb-3 col-md-8 offset-lg-2  ">
+                                          <button class="btn btn-primary " data-bs-dismiss="modal" type="submit">Sign In</button>
+
+                                       </div>
+                                       <div class="col-12 mb-3 col-md-8 offset-lg-2">
+                                          <p class="mb-0 Slink">Forgot passowrd? <a href=""> Click here
+                                                            </a></p>
+                                          <p class="mb-0 Slink">
+                                             <a href="">Already have an account?</a>
+                                          </p>
+                                       </div>
+                                    </div>
+
+
+
+
+
+                                 </form>
+                              </div>
+                              <div class="modal-footer">
+                                 <button class="btn btn-secondary" data-bs-dismiss="modal" type="button">Close</button>
+
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </nav>
+         </div>
+      </div>
+   </div>
+
+
+   <!-- jumbotron strats herer -->
+
+   <div class="jumbotron">
+      <!-- Heading of jumbotron -->
+      <h1 class="text-center mb-2">Services I provide</h1>
+
+      <div class="carousel carousel-dark slide" id="carouselID" data-bs-ride="carousel">
+
+         <!-- carousel indecators -->
+
+         <div class="carousel-indicators d-none d-md-flex">
+
+            <button type="button" data-bs-target="#carouselID" data-bs-slide-to="0" class="active" aria-label="slide 0"></button>
+            <button type="button" data-bs-target="#carouselID" data-bs-slide-to="1" aria-label="slide 1"></button>
+            <button type="button" data-bs-target="#carouselID" data-bs-slide-to="2" aria-label="slide 2"></button>
+         </div>
+         <div class="carousel-inner">
+
+            <!-- carousal 1 -->
+            <div class="carousel-item active item1 carousal1 " data-bs-interval="2000">
+               <div class="d-block container w-100 ">
+                  <div class="row align-items-center">
+                     <div class="col-4 offset-1 text-center d-none  d-md-block">
+                        <h1>
+                           Web Designing
+                        </h1>
+                        <p>some text Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt nulla quos suscipit quae totam pariatur quidem voluptatibus culpa dolorem corporis.
+                        </p>
+                     </div>
+                     <div class="col-9 col-md-6 offset-md-1  picture-div mx-auto ">
+                        <img src="./picture botstrap/c1.png" class="w-100 " height="auto" alt=" picture 1">
+                     </div>
+                  </div>
+               </div>
+            </div>
+
+
+            <!-- carousal 2 -->
+
+            <div class="carousel-item item2 carousal2 " data-bs-interval="2000">
+               <div class="container w-100 d-block ">
+
+                  <div class="row align-items-center">
+                     <div class="col-4 offset-1 d-none d-md-block text-center">
+                        <h1>PSD to Responsive HTML</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, expedita Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, expedita!</p>
+                     </div>
+                     <div class="col-9 col-md-6 offset-md-1 mx-auto">
+                        <img src="./picture botstrap/c2.png" class="w-100 " alt=" picturr 2">
+
+                     </div>
+                  </div>
+               </div>
+            </div>
+
+            <!--carousal 3 -->
+
+            <div class="carousel-item item3 carousal3" data-bs-interval="2000">
+               <div class="container w-100 d-block ">
+                  <div class="row align-items-center">
+                     <div class="col-4 offset-1 d-none d-md-block text-center">
+                        <h1>Web Development</h1>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure, ratione? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, expedita
+                        </p>
+                     </div>
+                     <div class="col-9 col-md-6 offset-md-1 mx-auto">
+                        <img src="./picture botstrap/c3.png" class="w-100" alt=" picture">
+
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <!-- controll buttons for carousels -->
+            <button class="carousel-control-prev mr-auto" type="button" data-bs-target="#carouselID" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+            <button class="carousel-control-next ml-auto" type="button" data-bs-target="#carouselID" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+         </div>
+
+      </div>
+
+
+   </div>
+   </div>
+   <!-- FAQS start from here -->
+
+   <h2 class="text-center mb-5" id="faq"> Browse your question by category wise</h2>
+
+   <div class="container pt3">
+      <div class="row ">
+         <div class="col">
+
+
+
+
+            <div class="row align-items-center pt4">
+               <div class=" col-12 mb-3  col-md-3 pt5">
+                  <div class="nav flex-md-column nav-pills nav-fill" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                     <button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">Introduction <span
+                                    class="badge bg-light text-dark rounded-pill">3</span> </button>
+                     <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">Education <span
+                                    class="badge bg-light text-dark rounded-pill">3</span> </button>
+                     <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false">Job Experience <span
+                                    class="badge bg-light text-dark rounded-pill">4</span></button>
+                     <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">Skills <span
+                                    class="badge bg-light text-dark rounded-pill">3</span></button>
+                  </div>
+               </div>
+
+               <div class="col-md-9">
+                  <div class="tab-content" id="v-pills-tabContent">
+
+                     <!-- First tab contents -->
+                     <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+
+
+
+                        <div class="accordion" id="accordionExample1">
+                           <div class="accordion-item">
+                              <h2 class="accordion-header" id="heading1">
+                                 <button class="accordion-button " data-bs-toggle="collapse" data-bs-target="#accordion1" aria-expanded="true" aria-controls="accordion1">What is my name? </button>
+                              </h2>
+                              <div class="accordion-collapse collapse show" id="accordion1" aria-labelledby="heading1" data-bs-parent="#accordionExample1">
+                                 <div class="accordion-body">
+                                    <strong> Lorem ipsum dolor </strong> sit amet, consectetur adipisicing elit. Quibusdam illum esse sequi corporis doloribus, cupiditate deserunt molestiae! Provident, dolorem recusandae?
+                                 </div>
+                              </div>
+                           </div>
+
+                           <div class="accordion-item">
+                              <h2 class="accordion-header" id="heading2">
+                                 <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#accordion2" aria-controls="accordion2" aria-expanded="false"> Where do I live</button>
+                              </h2>
+                              <div class="accordion-collapse collapse" id="accordion2" aria-labelledby="heading2" data-bs-parent="#accordionExample1">
+                                 <div class="accordion-body">
+                                    <a href="">Lorem ipsum dolor sit amet,</a> consectetur adipisicing elit. Quibusdam illum esse sequi corporis doloribus, cupiditate deserunt molestiae! Provident, dolorem recusandae?
+                                 </div>
+                              </div>
+                           </div>
+
+                           <div class="accordion-item">
+                              <h2 class="accordion-header" id="heading3">
+                                 <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#accordion3" aria-controls="accordion3" aria-expanded="false"> How old I am?</button>
+                              </h2>
+                              <div class="accordion-collapse collapse" id="accordion3" aria-labelledby="heading3" data-bs-parent="#accordionExample1">
+                                 <div class="accordion-body">
+
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam illum esse sequi corporis doloribus, cupiditate deserunt molestiae! Provident, dolorem recusandae?
+                                 </div>
+                              </div>
+                           </div>
+
+                        </div>
+
+
+                     </div>
+
+                     <!-- second tab content -->
+                     <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-home-tab">
+
+
+
+                        <div class="accordion " id="accordionExample2">
+                           <div class="accordion-item">
+                              <h2 class="accordion-header" id="heading1">
+                                 <button class="accordion-button " data-bs-toggle="collapse" data-bs-target="#accordion1" aria-expanded="true" aria-controls="accordion1">What is my Education </button>
+                              </h2>
+                              <div class="accordion-collapse collapse show" id="accordion1" aria-labelledby="heading1" data-bs-parent="#accordionExample2">
+                                 <div class="accordion-body">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam illum esse sequi corporis doloribus, cupiditate deserunt molestiae! Provident, dolorem recusandae?
+                                 </div>
+                              </div>
+                           </div>
+
+                           <div class="accordion-item">
+                              <h2 class="accordion-header" id="heading2">
+                                 <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#accordion2" aria-controls="accordion2" aria-expanded="false"> Where did I comeplete my Bachelor </button>
+                              </h2>
+                              <div class="accordion-collapse collapse" id="accordion2" aria-labelledby="heading2" data-bs-parent="#accordionExample2">
+                                 <div class="accordion-body">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam illum esse sequi corporis doloribus, cupiditate deserunt molestiae! Provident, dolorem recusandae?
+                                 </div>
+                              </div>
+                           </div>
+
+                           <div class="accordion-item">
+                              <h2 class="accordion-header" id="heading3">
+                                 <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#accordion3" aria-controls="accordion3" aria-expanded="false">Have I achieved some distinction</button>
+                              </h2>
+                              <div class="accordion-collapse collapse" id="accordion3" aria-labelledby="heading3" data-bs-parent="#accordionExample2">
+                                 <div class="accordion-body">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam illum esse sequi corporis doloribus, cupiditate deserunt molestiae! Provident, dolorem recusandae?
+                                 </div>
+                              </div>
+                           </div>
+
+                        </div>
+
+
+                     </div>
+
+                     <!-- Third tab content -->
+                     <div class="tab-pane fade " id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-home-tab">
+
+
+
+                        <div class="accordion" id="accordionExample3">
+                           <div class="accordion-item">
+                              <h2 class="accordion-header" id="heading1">
+                                 <button class="accordion-button " data-bs-toggle="collapse" data-bs-target="#accordion1" aria-expanded="true" aria-controls="accordion1">What was my first job? </button>
+                              </h2>
+                              <div class="accordion-collapse collapse show" id="accordion1" aria-labelledby="heading1" data-bs-parent="#accordionExample3">
+                                 <div class="accordion-body">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam illum esse sequi corporis doloribus, cupiditate deserunt molestiae! Provident, dolorem recusandae?
+                                 </div>
+                              </div>
+                           </div>
+
+                           <div class="accordion-item">
+                              <h2 class="accordion-header" id="heading2">
+                                 <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#accordion2" aria-controls="accordion2" aria-expanded="false"> How many job have I left?</button>
+                              </h2>
+                              <div class="accordion-collapse collapse" id="accordion2" aria-labelledby="heading2" data-bs-parent="#accordionExample3">
+                                 <div class="accordion-body">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam illum esse sequi corporis doloribus, cupiditate deserunt molestiae! Provident, dolorem recusandae?
+                                 </div>
+                              </div>
+                           </div>
+
+                           <div class="accordion-item">
+                              <h2 class="accordion-header" id="heading3">
+                                 <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#accordion3" aria-controls="accordion3" aria-expanded="false">Most reputed company I worked in?</button>
+                              </h2>
+                              <div class="accordion-collapse collapse" id="accordion3" aria-labelledby="heading3" data-bs-parent="#accordionExample3">
+                                 <div class="accordion-body">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam illum esse sequi corporis doloribus, cupiditate deserunt molestiae! Provident, dolorem recusandae?
+                                 </div>
+                              </div>
+                           </div>
+
+
+                           <div class="accordion-item">
+                              <h2 class="accordion-header" id="heading4">
+                                 <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#accordion3" aria-controls="accordion3" aria-expanded="false">Companies I want to work with?</button>
+                              </h2>
+                              <div class="accordion-collapse collapse" id="accordion3" aria-labelledby="heading4" data-bs-parent="#accordionExample3">
+                                 <div class="accordion-body">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam illum esse sequi corporis doloribus, cupiditate deserunt molestiae! Provident, dolorem recusandae?
+                                 </div>
+                              </div>
+                           </div>
+
+                        </div>
+
+
+                     </div>
+
+                     <!-- Fourth tab content -->
+                     <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-home-tab">
+
+
+
+                        <div class="accordion" id="accordionExample4">
+                           <div class="accordion-item">
+                              <h2 class="accordion-header" id="heading1">
+                                 <button class="accordion-button " data-bs-toggle="collapse" data-bs-target="#accordion1" aria-expanded="true" aria-controls="accordion1">What are my core skil? </button>
+                              </h2>
+                              <div class="accordion-collapse collapse show" id="accordion1" aria-labelledby="heading1" data-bs-parent="#accordionExample4">
+                                 <div class="accordion-body">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam illum esse sequi corporis doloribus, cupiditate deserunt molestiae! Provident, dolorem recusandae?
+                                 </div>
+                              </div>
+                           </div>
+
+                           <div class="accordion-item">
+                              <h2 class="accordion-header" id="heading2">
+                                 <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#accordion2" aria-controls="accordion2" aria-expanded="false"> Skill to learn? </button>
+                              </h2>
+                              <div class="accordion-collapse collapse" id="accordion2" aria-labelledby="heading2" data-bs-parent="#accordionExample4">
+                                 <div class="accordion-body">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam illum esse sequi corporis doloribus, cupiditate deserunt molestiae! Provident, dolorem recusandae?
+                                 </div>
+                              </div>
+                           </div>
+
+                           <div class="accordion-item">
+                              <h2 class="accordion-header" id="heading3">
+                                 <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#accordion3" aria-controls="accordion3" aria-expanded="false">Soft skills importance?</button>
+                              </h2>
+                              <div class="accordion-collapse collapse" id="accordion3" aria-labelledby="heading3" data-bs-parent="#accordionExample4">
+                                 <div class="accordion-body">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam illum esse sequi corporis doloribus, cupiditate deserunt molestiae! Provident, dolorem recusandae?
+                                 </div>
+                              </div>
+                           </div>
+
+                        </div>
+                     </div>
+                  </div>
+               </div>
+
+
+
+
+
+
+
+            </div>
+         </div>
+      </div>
+   </div>
+
+
+   <!-- tables div -->
+   <div class="container my-5">
+
+      <h1 class="text-center">
+         Tables</h1>
+      <div class="row my-5" id="table1">
+         <div class=" col ">
+
+            <!-- table 1 -->
+            <table class="table table-dark table-hover w-100">
+               <thead>
+                  <tr>
+                     <th scope="col ">#</th>
+                     <th scope="col ">First</th>
+                     <th scope="col ">Last</th>
+                     <th scope="col ">Handle</th>
+                  </tr>
+               </thead>
+               <tbody>
+                  <tr>
+                     <th scope="row ">1</th>
+                     <td>Mark</td>
+                     <td>Otto</td>
+                     <td>@mdo</td>
+                  </tr>
+                  <tr>
+                     <th scope="row ">2</th>
+                     <td>Jacob</td>
+                     <td>Thornton</td>
+                     <td>@fat</td>
+                  </tr>
+                  <tr>
+                     <th scope="row ">3</th>
+                     <td colspan="2 ">Larry the Bird</td>
+                     <td>@twitter</td>
+                  </tr>
+                  <tr>
+                     <th scope="row ">4</th>
+                     <td>Mark</td>
+                     <td>Otto</td>
+                     <td>@mdo</td>
+                  </tr>
+                  <tr>
+                     <th scope="row ">5</th>
+                     <td>Jacob</td>
+                     <td>Thornton</td>
+                     <td>@fat</td>
+                  </tr>
+                  <tr>
+                     <th scope="row ">6</th>
+                     <td colspan="2 ">Larry the Bird</td>
+                     <td>@twitter</td>
+                  </tr>
+               </tbody>
+            </table>
+
+         </div>
+      </div>
+
+
+
+   </div>
+   <div class="container">
+
+      <div class="row">
+         <div class="col ">
+            <nav aria-label="Page navigation example" class="">
+               <ul class="pagination justify-content-center">
+                  <li class="page-item ">
+                     <a class="page-link click1" href="#table1 "> Previous </a>
+                  </li>
+                  <li class="page-item ">
+                     <a class="page-link click2" href="#table2 "> 1 </a></li>
+                  <li class="page-item ">
+                     <a class="page-link click3" href="#table3 "> 2 </a>
+                  </li>
+                  <li class="page-item ">
+                     <a class="page-link click4" href="#table4 "> 3</a>
+                  </li>
+                  <li class="page-item ">
+                     <a class="page-link click1" href="#table1 "> Next </a>
+                  </li>
+               </ul>
+
+         </div>
+         </nav>
+
+
+      </div>
+
+
+
+
+   </div>
+   <!-- pagination ends here -->
+
+   <!-- footer starts from here -->
+   <footer class="text-center text-lg-start" style="background-color: #e9ecef;">
+      <div class="container d-flex justify-content-center py-5">
+         <button type="button" class="btn btn-primary btn-lg btn-floating mx-2" style="background-color: #2c2a2a;">
+                <i class="fab fa-facebook-f"></i>
+            </button>
+         <button type="button" class="btn btn-primary btn-lg btn-floating mx-2" style="background-color:#2c2a2a;">
+                <i class="fab fa-youtube"></i>
+            </button>
+         <button type="button" class="btn btn-primary btn-lg btn-floating mx-2" style="background-color:#2c2a2a;">
+                <i class="fab fa-instagram"></i>
+            </button>
+         <button type="button" class="btn btn-primary btn-lg btn-floating mx-2" style="background-color:#2c2a2a;">
+                <i class="fab fa-twitter"></i>
+            </button>
+      </div>
+
+      <!-- Copyright -->
+      <div class="text-center text-white p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+         © 2021 Copyright:
+         <a>Made with ❤️ by Nouman</a>
+      </div>
+      <!-- Copyright -->
+   </footer>
+
+
+   <!-- End of .container -->
+
+
+
+
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>
